@@ -5,7 +5,7 @@
 - Java
 
 ## Questions are picked from:
-- [PrepInsta](https://prepinsta.com/data-structures)
-- [GeeksforGeeks](https://www.geeksforgeeks.org/data-structures/)
-- [Work@tech](https://workat.tech/problem-solving/lists/dsa-problems/practice)
+- <a href="https://prepinsta.com/data-structures" target="_blank">PrepInsta</a>
+- <a href="https://www.geeksforgeeks.org/data-structures/" target="_blank">GeeksforGeeks</a>
+- <a href="https://workat.tech/problem-solving/lists/dsa-problems/practice" target="_blank">Work@tech</a>
 
