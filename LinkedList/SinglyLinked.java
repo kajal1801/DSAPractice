@@ -1,8 +1,8 @@
 import java.util.Scanner;
-
 public class SinglyLinked {
     Node head = null;
 
+    /* Inner Class */
     class Node {
         int data;
         Node next;
@@ -13,6 +13,7 @@ public class SinglyLinked {
     }
     int count = 0;
 
+    /* Printing List */
     public void printlist(){
         Node current = head;
         while(current != null){
@@ -21,6 +22,7 @@ public class SinglyLinked {
         }
     }
 
+    /* Inserting a node at the beginning of the list */
     public void insert_at_beg(int new_data){
 
         Node newnode = new Node(new_data);
@@ -32,6 +34,7 @@ public class SinglyLinked {
 
     }
 
+    /* Inserting a node at the end of the list */
     public void insert_at_end(int new_data){
 
         Node newnode = new Node(new_data);
@@ -55,6 +58,7 @@ public class SinglyLinked {
 
     }
 
+    /* Inserting a node after a given element in the list */
     public void insertafter(int element, int new_data){
         Node newnode = new Node(new_data);
 
@@ -76,6 +80,7 @@ public class SinglyLinked {
         count++;
     }
 
+    /* Inserting a node at any position in the list */
     public void insert_at_pos(int pos, int new_data) {
         Node newnode = new Node(new_data);
         
@@ -102,6 +107,7 @@ public class SinglyLinked {
         count++;
     }
 
+    /* Inserting a node at the middle of the list */
     public void insert_at_mid(int new_data) {
         int pos = count/2 + 1;
         
@@ -130,6 +136,7 @@ public class SinglyLinked {
         count++;
     }
 
+    /* Main Method */
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         SinglyLinked slist = new SinglyLinked();
@@ -137,7 +144,7 @@ public class SinglyLinked {
         int choice = 1,d,pos;
 
         while(choice != 0){
-            System.out.println("Enter 1 to print the Linked List\nEnter 2 to insert an element in the beginning\nEnter 3 to insert an element at the end\nEnter 4 to insert an element after a given element\nEnter 5 to insert the element at a given pos\nEnter 6 to insert the element at the middle of the linked list\nEnter 0 to quit\nEnter your choice: \n");
+            System.out.println("Enter 1 to print the Linked List\nEnter 2 to insert an element in the beginning\nEnter 3 to insert an element at the end\nEnter 4 to insert an element after a given element\nEnter 5 to insert the element at a given pos\nEnter 6 to insert the element at the middle of the linked list\nEnter 7 to delete the node from the beginning\nEnter 8 to delete the node from the end\nEnter 9 to delete the node from any position\nEnter 9 to delete the node from the middle\nEnter 0 to quit\nEnter your choice: \n");
             choice = sc.nextInt();
             switch(choice){
                 case 1: 
