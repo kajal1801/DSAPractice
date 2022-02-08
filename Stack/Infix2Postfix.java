@@ -20,7 +20,7 @@ public class Infix2Postfix {
     String infixPostfix(String exp){
         String result = "";
 
-        Stack<Character> stack = new Stack<>();
+        Stack<Character> stack = new Stack<Character>();
 
         for(int i = 0;i < exp.length();i++){
             char c = exp.charAt(i);
