@@ -12,7 +12,7 @@ public class SimpleQueue{
 
     public void enqueue(int data){
         if(rear == MAX-1){
-            System.out.println("Queue is Empty");
+            System.out.println("Queue is Full");
             return;
         }
         queue[++rear] = data;
