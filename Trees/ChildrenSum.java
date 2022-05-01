@@ -39,20 +39,21 @@ public class ChildrenSum
         root.right = new Node(2);
         int k = isSumProperty(root);
         if(k == 1){
-            System.out.println("The Chilren are Same");
+            System.out.println("The Chilren's sum is equal to the parent");
         }
         else{
-            System.out.println("The Children are not same");
+            System.out.println("The Chilren's sum is not equal to the parent");
         }
+
         Node root2 = new Node(5);
         root2.left = new Node(4);
         root2.right = new Node(2);
         k = isSumProperty(root2);
         if(k == 1){
-            System.out.println("The Chilren are Same");
+            System.out.println("The Chilren's sum is equal to the parent");
         }
         else{
-            System.out.println("The Children are not same");
+            System.out.println("The Chilren's sum is not equal to the parent");
         }
     }
 }
