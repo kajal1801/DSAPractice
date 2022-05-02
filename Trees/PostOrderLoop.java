@@ -2,32 +2,32 @@
 import java.util.ArrayList;
 import java.util.Stack;
 
-class Node{
+class Node9{
     int data;
-    Node right;
-    Node left;
-    Node(int d){
+    Node9 right;
+    Node9 left;
+    Node9(int d){
         data = d;
     }
 }
 
 public class PostOrderLoop{
-    ArrayList<Integer> postOrder(Node root)
+    ArrayList<Integer> postOrder(Node9 root)
     {
        // Your code goes here
        ArrayList<Integer> list = new ArrayList<Integer>();
        if(root == null){
            return list;
        }
-       Stack<Node> st = new Stack<Node>();
-       Node curr = root;
+       Stack<Node9> st = new Stack<Node9>();
+       Node9 curr = root;
        while(curr != null || !st.isEmpty()){
            if(curr != null){
                st.push(curr);
                curr = curr.left;
            }
            else{
-               Node temp = st.peek().right;
+               Node9 temp = st.peek().right;
                if(temp == null){
                    temp = st.peek();
                    st.pop();
