@@ -1,16 +1,16 @@
-class Node1{
+class Node{
     int key;
-    Node1 left, right;
-    Node1(int k){
+    Node left, right;
+    Node(int k){
         key = k;
     }
 }
 
 public class BinaryTree{
     public static void main(String args[]){
-        Node1 root = new Node1(10);
-        root.left = new Node1(20);
-        root.right = new Node1(30);
-        root.left.left = new Node1(40);
+        Node root = new Node(10);
+        root.left = new Node(20);
+        root.right = new Node(30);
+        root.left.left = new Node(40);
     }
 }
