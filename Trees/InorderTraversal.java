@@ -1,14 +1,14 @@
-class Node{
+class Node15{
     int key;
-    Node left;
-    Node right;
-    Node(int k){
+    Node15 left;
+    Node15 right;
+    Node15(int k){
         key = k;
     }
 }
 
 public class InorderTraversal {
-    public void inorder(Node root){
+    public void inorder(Node15 root){
         if(root != null){
             inorder(root.left);
             System.out.print(root.key + " --> ");
@@ -17,10 +17,10 @@ public class InorderTraversal {
     }
 
     public static void main(String args[]){
-        Node root = new Node(10);
-        root.left = new Node(20);
-        root.right = new Node(30);
-        root.left.left = new Node(40);
+        Node15 root = new Node15(10);
+        root.left = new Node15(20);
+        root.right = new Node15(30);
+        root.left.left = new Node15(40);
         
         InorderTraversal obj = new InorderTraversal();
         obj.inorder(root);
