@@ -1,12 +1,12 @@
 import java.util.*;
 import java.io.*;
 
-class Node
+class Node18
 {
-	Node left, right;
+	Node18 left, right;
 	int data;
 	
-	Node(int d)
+	Node18(int d)
 	{
 		data = d;
 		left = right = null;
@@ -16,31 +16,31 @@ class Node
 class TreetoDLL
 {
     
-    static Node buildTree(String str)throws IOException{
+    static Node18 buildTree(String str)throws IOException{
         
         if(str.length()==0 || str.charAt(0)=='N'){
             return null;
         }
         
         String ip[] = str.split(" ");
-        Node root = new Node(Integer.parseInt(ip[0]));
+        Node18 root = new Node18(Integer.parseInt(ip[0]));
         
-        Queue<Node> queue = new LinkedList<>(); 
+        Queue<Node18> queue = new LinkedList<>(); 
         
         queue.add(root);
         
         int i = 1;
         while(queue.size()>0 && i < ip.length) {
             
-            Node currNode = queue.peek();
+            Node18 currNode18 = queue.peek();
             queue.remove();
                 
             String currVal = ip[i];
                 
             if(!currVal.equals("N")) {
                     
-                currNode.left = new Node(Integer.parseInt(currVal));
-                queue.add(currNode.left);
+                currNode18.left = new Node18(Integer.parseInt(currVal));
+                queue.add(currNode18.left);
             }
                 
             i++;
@@ -51,10 +51,10 @@ class TreetoDLL
                 
             if(!currVal.equals("N")) {
                     
-                // Create the right child for the current node
-                currNode.right = new Node(Integer.parseInt(currVal));
+                // Create the right child for the current Node18
+                currNode18.right = new Node18(Integer.parseInt(currVal));
                     
-                queue.add(currNode.right);
+                queue.add(currNode18.right);
             }
             i++;
         }
@@ -63,18 +63,18 @@ class TreetoDLL
     }
     
 
-	void inorder(Node node)
+	void inorder(Node18 Node18)
 	{
-		if(node==null)
+		if(Node18==null)
 			return ;
 		else
-			inorder(node.left);
-			System.out.print(node.data + " ");
-			inorder(node.right);
+			inorder(Node18.left);
+			System.out.print(Node18.data + " ");
+			inorder(Node18.right);
 	}
-	public static void printList(Node head) 
+	public static void printList(Node18 head) 
     {
-		Node prev = head;
+		Node18 prev = head;
         while (head != null) 
         {
             System.out.print(head.data + " ");
@@ -97,10 +97,10 @@ class TreetoDLL
     
 	        while(t > 0){
 	            String s = br.readLine();
-    	    	Node root = buildTree(s);
+    	    	Node18 root = buildTree(s);
         	    Ttodll g = new Ttodll();
 			    
-			    Node ans = g.bToDLL(root);
+			    Node18 ans = g.bToDLL(root);
 			    printList(ans);
                 t--;
                 System.out.println();
@@ -112,14 +112,14 @@ class TreetoDLL
 
 class Ttodll
 {
-    Node prev = null;
-    Node bToDLL(Node root)
+    Node18 prev = null;
+    Node18 bToDLL(Node18 root)
     {
 	    //  Your code here	
 	    if(root == null){
 	        return root;
 	    }
-	    Node head = bToDLL(root.left);
+	    Node18 head = bToDLL(root.left);
 	    if(prev == null){
 	        head = root;
 	    }
