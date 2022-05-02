@@ -1,24 +1,24 @@
 import java.util.LinkedList;
 import java.util.Queue;
 
-class Node{
+class Node11{
     int key;
-    Node right, left;
-    Node(int k){
+    Node11 right, left;
+    Node11(int k){
         key = k;
     }
 }
 public class LO2Loo {
-    public void printlevel(Node root){
+    public void printlevel(Node11 root){
         if(root == null){
             return;
         }
-        Queue<Node> q = new LinkedList<Node>();
+        Queue<Node11> q = new LinkedList<Node11>();
         q.add(root);
         while(q.isEmpty() == false){
             int count = q.size();
             for(int i = 0;i < count; i++){
-                Node curr = q.poll();
+                Node11 curr = q.poll();
                 System.out.print(curr.key + " ");
                 if(curr.left != null){
                     q.add(curr.left);
@@ -34,12 +34,12 @@ public class LO2Loo {
     public static void main(String argsp[])
     {
         LO2Loo obj = new LO2Loo();
-        Node root = new Node(12);
-        root.left = new Node(45);
-        root.right = new Node(69);
-        root.left.left = new Node(56);
-        root.left.right = new Node(89);
-        root.right.right = new Node(90);
+        Node11 root = new Node11(12);
+        root.left = new Node11(45);
+        root.right = new Node11(69);
+        root.left.left = new Node11(56);
+        root.left.right = new Node11(89);
+        root.right.right = new Node11(90);
 
         obj.printlevel(root);
     }
