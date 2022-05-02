@@ -1,20 +1,20 @@
-class Node{
+class Node10{
     int data;
-    Node right, left;
-    Node(int k){
+    Node10 right, left;
+    Node10(int k){
         data = k;
     }
 }
 
 class MinMaxTree{
-    public static int findMax(Node root){
+    public static int findMax(Node10 root){
         //code here
         if(root ==  null){
             return Integer.MIN_VALUE;
         }
         return Math.max(Math.max(findMax(root.left),findMax(root.right)),root.data);
     }
-    public static int findMin(Node root){
+    public static int findMin(Node10 root){
         //code here
         if(root == null){
             return Integer.MAX_VALUE;
@@ -23,12 +23,12 @@ class MinMaxTree{
     }
 
     public static void main(String args[]){
-        Node root = new Node(12);
-        root.left = new Node(45);
-        root.right = new Node(69);
-        root.left.left = new Node(56);
-        root.left.right = new Node(89);
-        root.right.right = new Node(90);
+        Node10 root = new Node10(12);
+        root.left = new Node10(45);
+        root.right = new Node10(69);
+        root.left.left = new Node10(56);
+        root.left.right = new Node10(89);
+        root.right.right = new Node10(90);
 
         int ans;
         ans = findMax(root);
