@@ -1,15 +1,15 @@
-class Node{
+class Node6{
     int key;
-    Node left;
-    Node right;
-    Node(int k){
+    Node6 left;
+    Node6 right;
+    Node6(int k){
         key = k;
     }
 }
 
 public class PreorderTraversal {
 
-    public void preorder(Node root){
+    public void preorder(Node6 root){
         if(root != null){
             System.out.print(root.key + " ");
             preorder(root.left);
@@ -18,11 +18,11 @@ public class PreorderTraversal {
     }
 
     public static void main(String args[]){
-        Node root = new Node(10);
-        root.left = new Node(20);
-        root.right = new Node(30);
-        root.right.left = new Node(40);
-        root.right.right = new Node(50);
+        Node6 root = new Node6(10);
+        root.left = new Node6(20);
+        root.right = new Node6(30);
+        root.right.left = new Node6(40);
+        root.right.right = new Node6(50);
 
         PreorderTraversal obj = new PreorderTraversal();
         obj.preorder(root);
