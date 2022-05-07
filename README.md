@@ -1,5 +1,5 @@
 # DSAPractice:
-<p>This repository contains all the solution of DSA problems solved in my study group.</p>
+<p>This repository contains all the solution of Data Structures and Algorithms problems solved in my study group.</p>
 
 ## Language Used: 
 - Java
