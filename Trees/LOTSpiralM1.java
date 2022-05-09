@@ -2,11 +2,11 @@ import java.util.LinkedList;
 import java.util.Queue; 
 import java.util.*;
 
-class Node{
+class Node22{
     int data;
-    Node left;
-    Node right;
-    Node(int data){
+    Node22 left;
+    Node22 right;
+    Node22(int data){
         this.data = data;
         left=null;
         right=null;
@@ -15,21 +15,21 @@ class Node{
 
 class LOTSpiralM1
 {	
-    ArrayList<Integer> findSpiral(Node root) 
+    ArrayList<Integer> findSpiral(Node22 root) 
     {
         
         ArrayList<Integer> list = new ArrayList<Integer>();
         if(root == null){
             return list;
         }
-        Queue<Node> q = new LinkedList<Node>();
+        Queue<Node22> q = new LinkedList<Node22>();
         Stack<Integer> st = new Stack<Integer>();
         boolean reverse = true;
         q.add(root);
         while(q.isEmpty() == false){
             int count = q.size();
             for(int i = 0;i<count;i++){
-                Node curr = q.poll();
+                Node22 curr = q.poll();
                 if(reverse == true){
                     st.push(curr.data);
                 }
