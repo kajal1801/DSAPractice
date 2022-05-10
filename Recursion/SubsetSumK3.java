@@ -2,6 +2,9 @@ import java.util.Scanner;
 
 public class SubsetSumK3 {
     public int subsetsum(int arr[], int i, int s, int sum){
+        if(s > sum){
+            return 0;
+        }
         if(i == arr.length){
             if(s == sum){
                 return 1;
@@ -33,3 +36,5 @@ public class SubsetSumK3 {
         sc.close();
     }
 }
+
+// Time Complexity: O(2^n)
