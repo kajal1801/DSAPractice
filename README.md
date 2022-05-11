@@ -2,7 +2,7 @@
 <p>This repository contains all the solution of Data Structures and Algorithms problems solved in my study group.</p>
 
 ## Language Used: 
-- Java
+#### Java
 
 ## Questions are picked from:
 - <strong><a href="https://prepinsta.com/data-structures" target="_blank">PrepInsta</a></strong>
