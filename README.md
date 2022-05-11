@@ -11,5 +11,7 @@
 
 <hr>
 
-#### You can get the C++ solutions to these problems here:
-- <strong><a href="https://github.com/prachi1710/cpp-codes" target="_blank">Prachi Kumari cpp-codes Repository</a></strong>
+#### Best place to learn some of the difficult topics of DSA like recursion, Dynamic Programming, Trie, etc.:
+<strong><a href="https://www.youtube.com/c/takeUforward" target="_blank">TakeUForward</a></strong>
+<strong><a href="https://www.youtube.com/playlist?list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU" target="_blank">Jenny's Lecture</a></strong>
+<strong><a href="https://www.youtube.com/playlist?list=PL6Zs6LgrJj3tDXv8a_elC6eT_4R5gfX4d" target="_blank">Jenny's Lecture</a></strong>
