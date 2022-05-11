@@ -1,8 +1,10 @@
-# DSAPractice:
+# DSAPractice
 <p>This repository contains all the solution of Data Structures and Algorithms problems solved in my study group.</p>
 
 ## Language Used: 
 ### Java
+
+<hr>
 
 ## Questions are picked from:
 - <strong><a href="https://prepinsta.com/data-structures" target="_blank">PrepInsta</a></strong>
@@ -15,4 +17,4 @@
 ### Channels/Playlists I followed to learn DSA:
 - <strong><a href="https://www.youtube.com/c/takeUforward" target="_blank">TakeUForward</a></strong>
 - <strong><a href="https://www.youtube.com/playlist?list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU" target="_blank">Jenny's Lecture</a></strong>
-- <strong><a href="https://www.youtube.com/playlist?list=PL6Zs6LgrJj3tDXv8a_elC6eT_4R5gfX4d" target="_blank">Jenny's Lecture</a></strong>
+- <strong><a href="https://www.youtube.com/playlist?list=PL6Zs6LgrJj3tDXv8a_elC6eT_4R5gfX4d" target="_blank">Dinesh Varyani</a></strong>
