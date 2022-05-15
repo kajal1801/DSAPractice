@@ -19,7 +19,7 @@ public class Subsequences{
 
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the aize of the array: ");
+        System.out.println("Enter the size of the array: ");
         int n = sc.nextInt();
         int arr[] = new int[n];
         System.out.println("Enter the elements of the array:");
