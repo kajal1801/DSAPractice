@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -28,6 +29,7 @@ public class SubsetSumII {
         for(int i = 0; i < n ;i++){
             arr[i] = sc.nextInt();
         }
+        Arrays.sort(arr);
         List<Integer> curr = new ArrayList<Integer>();
         List<List<Integer>> list = new ArrayList<>();
         findSubset(0, arr, curr, list);
