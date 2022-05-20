@@ -1,11 +1,11 @@
 import java.util.Stack; 
 import java.util.*;
 
-class Node21{
+class Node23{
     int data;
-    Node21 left;
-    Node21 right;
-    Node21(int data){
+    Node23 left;
+    Node23 right;
+    Node23(int data){
         this.data = data;
         left=null;
         right=null;
@@ -14,20 +14,20 @@ class Node21{
 
 class LOTSpiralM2
 {	
-    ArrayList<Integer> findSpiral(Node21 root) 
+    ArrayList<Integer> findSpiral(Node23 root) 
     {
         
         ArrayList<Integer> list = new ArrayList<Integer>();
         if(root == null){
             return list;
         }
-        Stack<Node21> st1 = new Stack<Node21>();
-        Stack<Node21> st2 = new Stack<Node21>();
+        Stack<Node23> st1 = new Stack<Node23>();
+        Stack<Node23> st2 = new Stack<Node23>();
         
         st1.push(root);
         while(st1.isEmpty() == false || st2.isEmpty() == false){
             while(st1.isEmpty() == false){
-                Node21 curr = st1.pop();
+                Node23 curr = st1.pop();
                 list.add(curr.data);
                 if(curr.right != null){
                     st2.push(curr.right);
@@ -38,7 +38,7 @@ class LOTSpiralM2
             }
             
             while(st2.isEmpty() == false){
-                Node21 curr = st2.pop();
+                Node23 curr = st2.pop();
                 list.add(curr.data);
                 if(curr.left != null){
                     st1.push(curr.left);
