@@ -26,6 +26,9 @@ public class InOrderLoop {
                 curr = curr.left;
             }
             else{
+                if(st.isEmpty()){
+                    break;
+                }
                 curr = st.pop();
                 list.add(curr.data);
                 curr = curr.right;
