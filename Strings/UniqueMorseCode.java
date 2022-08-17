@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class UniqueMorseCode {
     public int uniqueMorseRepresentations(String[] words) {
         String[] alpha = {".-","-...","-.-.","-..",".","..-.","--.",
