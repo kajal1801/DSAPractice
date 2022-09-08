@@ -1,10 +1,10 @@
-class TreeNode4 {
+class TreeNode6 {
     int val;
-    TreeNode4 left;
-    TreeNode4 right;
-    TreeNode4() {}
-    TreeNode4(int val) { this.val = val; }
-    TreeNode4(int val, TreeNode4 left, TreeNode4 right) {
+    TreeNode6 left;
+    TreeNode6 right;
+    TreeNode6() {}
+    TreeNode6(int val) { this.val = val; }
+    TreeNode6(int val, TreeNode6 left, TreeNode6 right) {
         this.val = val;
         this.left = left;
         this.right = right;
@@ -12,7 +12,7 @@ class TreeNode4 {
 }
 
 public class MinDepth {
-    public int height(TreeNode4 root){
+    public int height(TreeNode6 root){
         if(root == null){
             return 0;
         }
@@ -25,7 +25,7 @@ public class MinDepth {
         }
         return Math.min(height(root.left), height(root.right)) + 1;
     }
-    public int minDepth(TreeNode4 root) {
+    public int minDepth(TreeNode6 root) {
         return height(root);
     }
 }
