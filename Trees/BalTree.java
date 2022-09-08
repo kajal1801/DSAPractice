@@ -37,3 +37,32 @@ public class BalTree {
         obj.isBalanced(root);
     }
 }
+
+
+// Alternate Method:
+
+// public int balance(TreeNode root){
+//     if(root == null){
+//         return 0;
+//     }
+//     int leftSide = balance(root.left);
+//     if(leftSide == -1){
+//         return -1;
+//     }
+//     int rightSide = balance(root.right);
+//     if(rightSide == -1){
+//         return -1;
+//     }
+    
+//     if(Math.abs(leftSide - rightSide) > 1){
+//         return -1;
+//     } 
+//     return (Math.max(leftSide, rightSide) + 1);
+// }
+// public boolean isBalanced(TreeNode root) {
+//     if(root == null){
+//         return true;
+//     }
+//     int diff = balance(root);
+//     return (diff != -1);
+// }
