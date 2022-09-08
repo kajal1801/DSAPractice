@@ -1,10 +1,10 @@
-class TreeNode {
+class TreeNode5 {
     int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode() {}
-    TreeNode(int val) { this.val = val; }
-    TreeNode(int val, TreeNode left, TreeNode right) {
+    TreeNode5 left;
+    TreeNode5 right;
+    TreeNode5() {}
+    TreeNode5(int val) { this.val = val; }
+    TreeNode5(int val, TreeNode5 left, TreeNode5 right) {
         this.val = val;
         this.left = left;
         this.right = right;
@@ -12,13 +12,13 @@ class TreeNode {
 }
 public class TreePrune {
 
-    public TreeNode prune(TreeNode curr){
+    public TreeNode5 prune(TreeNode5 curr){
         if(curr == null){
             return null;
         }
         
-        TreeNode left = prune(curr.left);
-        TreeNode right = prune(curr.right);
+        TreeNode5 left = prune(curr.left);
+        TreeNode5 right = prune(curr.right);
         if(left == null){
             curr.left = null;
         }
@@ -33,7 +33,7 @@ public class TreePrune {
         
         return curr;
     }
-    public TreeNode pruneTree(TreeNode root) {
+    public TreeNode5 pruneTree(TreeNode5 root) {
         return prune(root);
     }
 }
