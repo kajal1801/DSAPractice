@@ -10,13 +10,15 @@
 - <strong><a href="https://practice.geeksforgeeks.org/" target="_blank">GeeksforGeeks</a></strong>
 - <strong><a href="https://workat.tech/problem-solving/lists/dsa-problems/practice" target="_blank">Work@tech</a></strong>
 - <strong><a href="https://leetcode.com/problemset/all/" target="_blank">Leetcode</a></strong>
+- <strong><a href="https://binarysearch.com/" target="_blank">Binarysearch</a></strong>
 
 <hr>
 
-## Youtube Channels I follow to learn DSA:
+## Youtube Channels/Playlists I follow to learn DSA:
 - <strong><a href="https://www.youtube.com/c/takeUforward" target="_blank">TakeUForward</a></strong>
 - <strong><a href="https://www.youtube.com/playlist?list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU" target="_blank">Jenny's Lecture</a></strong>
 - <strong><a href="https://www.youtube.com/playlist?list=PL6Zs6LgrJj3tDXv8a_elC6eT_4R5gfX4d" target="_blank">Dinesh Varyani</a></strong>
+- <strong><a href="https://www.youtube.com/c/AdityaVermaTheProgrammingLord" target="_blank">Dinesh Varyani</a></strong>
 
 <hr>
 
