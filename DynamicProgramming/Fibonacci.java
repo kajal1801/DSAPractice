@@ -1,3 +1,4 @@
+// Memoization
 import java.util.HashMap;
 
 public class Fibonacci {
@@ -24,3 +25,35 @@ public class Fibonacci {
         return a+b;
     }
 }
+
+/*
+ * TC = O(n)
+ * SC = O(n) + O(n) // Recursion + Array
+*/
+
+// Tabulation
+
+/*
+    dp[0] = 0, dp[1] = 0;
+    for(i = 2; i <=n ; i++){
+        dp[i] = dp[i-1] + dp[i-2];
+    }
+
+    TC = O(n)
+    SC = O(n)
+*/
+
+// Optimization
+
+/*
+    prev2 = 0, prev = 1;
+    for(int i = 2; i <= n; i++){
+        curr = prev + prev2;
+        prev2 = prev;
+        prev = curr;
+    }
+    return prev;
+
+    TC = O(n)
+    SC = O(1)
+ */
