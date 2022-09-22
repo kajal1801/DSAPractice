@@ -9,7 +9,7 @@ public class MatchDayII{
         ArrayList<Integer> ans=new ArrayList<Integer>();
 
         for(int i=0;i<n;++i){
-            while(q.size()>0 && i-q.getFirst()>=k){
+            if(q.size()>0 && i-q.getFirst()>=k){
                 q.removeFirst();
             }
             while(q.size()>0 && arr[q.getLast()] <= arr[i]){
