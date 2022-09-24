@@ -30,3 +30,25 @@ public class ClimbingStairs {
         return ans;
     }
 }
+
+/*
+Another Memoized Code:- 
+
+ * int M = 1000000007;
+    //Function to count number of ways to reach the nth stair.
+    int memo(int n, int[] dp){
+        if(n == 0) return 1;
+        if(n == 1) return 1;
+        if(dp[n] != -1) return dp[n];
+        
+        return dp[n] = ((memo(n-1, dp) + memo(n-2, dp)) % M);
+    }
+    int countWays(int n)
+    {
+        
+        // your code here
+        int[] dp = new int[n+1];
+        Arrays.fill(dp, -1);
+        return memo(n, dp);
+    }
+ */
