@@ -1,5 +1,5 @@
 import java.util.* ;
-import java.io.*; 
+ 
 public class SubsetSum {
     public static boolean subsetSum(int k, int i, int[] arr, int[][] dp){
         if(k == 0){
