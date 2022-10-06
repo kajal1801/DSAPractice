@@ -2,7 +2,7 @@ import java.util.*;
 
 class Create{
     public static void main(String[] args) {
-        int n = 3, m = 3;
+        int n = 3;
         // Storing in a matrix
         // int adj[][] = new int[n+1][n+1];
 
