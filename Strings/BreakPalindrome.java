@@ -9,7 +9,7 @@ public class BreakPalindrome {
         }
         
         int i = 0;
-        while(i < n){
+        while(i < n/2){
             if(palindrome.charAt(i) != 'a'){
                 s1 = palindrome.substring(0,i) + 'a' + palindrome.substring(i+1);
                 System.out.println(s1);
