@@ -1,3 +1,7 @@
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+
 public class KeysnRooms {
     public boolean canVisitAllRooms(List<List<Integer>> rooms) {
         int n = rooms.size();
