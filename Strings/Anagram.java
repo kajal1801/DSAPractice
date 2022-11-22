@@ -7,14 +7,14 @@ public class Anagram {
             return false;
         }
 
-        int[] count = new int[256];
+        int[] count = new int[26];
          
         for(int i = 0;i<s1.length();i++){
-            count[s1.charAt(i)]++;
-            count[s2.charAt(i)]--;
+            count[s1.charAt(i) - 'a']++;
+            count[s2.charAt(i) - 'a']--;
         }
 
-        for(int i = 0;i<256;i++){
+        for(int i = 0;i<26;i++){
             if(count[i] != 0){
                 return false;
             }
