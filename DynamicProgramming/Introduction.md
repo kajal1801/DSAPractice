@@ -7,3 +7,9 @@
 1. Declare a DP array (dp[n+1])
 2. Check if dp[n] != -1
 3. Depending on (2), either return the stored value or calculate and store the value
+
+- DP on Strings
+
+1. Express in <i>f(ind1, ind2)</i>
+2. Explore possibilities on the indexes
+3. Take the maximum of them
