@@ -1,3 +1,5 @@
+import java.util.*;
+
 class Sorting2DArrays {
     public int[][] sortTheStudents(int[][] score, int k) {
         Arrays.sort(score, new Comparator<int[]>(){
